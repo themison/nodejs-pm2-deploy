@@ -9,7 +9,7 @@ import errorHandler from './middlewares/error-handler';
 import { DB_ADDRESS } from './config';
 import routes from './routes';
 
-const { PORT = 3000 } = process.env;
+const { SERVER_PORT = 3000 } = process.env;
 const app = express();
 mongoose.connect(DB_ADDRESS);
 
@@ -23,4 +23,4 @@ app.use(errors());
 app.use(errorHandler);
 
 // eslint-disable-next-line no-console
-app.listen(PORT, () => console.log('ok'));
+app.listen(SERVER_PORT, () => console.log('ok'));
