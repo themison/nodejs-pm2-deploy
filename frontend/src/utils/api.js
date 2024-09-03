@@ -139,6 +139,6 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('http://localhost:3001');
+  const api = new Api('http://api.mesto.themison.ru');
 
   export default api;
