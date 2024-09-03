@@ -7,6 +7,8 @@ const {
 module.exports = {
   apps: [{
     name: 'frontend',
+    script: 'npm',
+    args: 'start',
   }],
 
   // Настройка деплоя
